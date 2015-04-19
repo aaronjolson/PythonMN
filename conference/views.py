@@ -19,6 +19,13 @@ def sponsors(request):
     return render(request, "conference/sponsors.html", {'form': form, })
 
 
+def about(request):
+
+    form = SignUpForm()
+
+    return render(request, "conference/about.html", {'form': form, })
+
+
 @require_POST
 def signup(request):
 

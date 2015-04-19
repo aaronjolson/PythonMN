@@ -6,4 +6,5 @@ urlpatterns = patterns('conference.views',
                        url(r'^$', 'home', name='home'),
                        url(r'signup/$', 'signup', name='signup'),
                        url(r'sponsors/$', 'sponsors', name='sponsors'),
+                       url(r'about/$', 'about', name='about')
                        )

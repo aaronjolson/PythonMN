@@ -113,7 +113,7 @@ if DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static-only')
     MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
     STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static', 'static'),
+        os.path.join(BASE_DIR, 'static'), 'static'
     )
 
 PIPELINE_CSS = {
