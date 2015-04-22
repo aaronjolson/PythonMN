@@ -26,6 +26,13 @@ def about(request):
     return render(request, "conference/about.html", {'form': form, })
 
 
+def volunteer(request):
+
+    form = SignUpForm()
+
+    return render(request, "conference/volunteer.html", {'form': form, })
+
+
 @require_POST
 def signup(request):
 

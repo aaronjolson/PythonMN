@@ -4,7 +4,8 @@ from django.conf.urls.static import static
 
 urlpatterns = patterns('conference.views',
                        url(r'^$', 'home', name='home'),
+                       url(r'about/$', 'about', name='about'),
                        url(r'signup/$', 'signup', name='signup'),
                        url(r'sponsors/$', 'sponsors', name='sponsors'),
-                       url(r'about/$', 'about', name='about')
+                       url(r'volunteer/$', 'volunteer', name='volunteer')
                        )
